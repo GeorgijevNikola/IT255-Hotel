@@ -1,0 +1,44 @@
+body {
+  background-color: #f9fafb;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.ui.container {
+  margin-top: 30px;
+}
+
+.ui.inverted.blue.segment {
+  background-color: #2185d0 !important;
+  color: white !important;
+}
+
+.ui.raised.segment {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.ui.selectable.inverted.table {
+  background-color: #545454 !important;
+}
+
+.ui.selectable.inverted.table thead {
+  background-color: #333333 !important;
+}
+
+.ui.selectable.inverted.table th, .ui.selectable.inverted.table td {
+  color: white !important;
+}
+
+.ui.form .field > label {
+  color: #2185d0 !important;
+}
+
+.ui.blue.button {
+  background-color: #2185d0 !important;
+  color: white !important;
+}
+
+.ui.blue.button:hover {
+  background-color: #1678c2 !important;
+}

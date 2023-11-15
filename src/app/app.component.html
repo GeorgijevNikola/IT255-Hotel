@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</head>
+<body>
+<div class="ui container">
+  <h1 class="ui inverted blue segment center aligned header">Hotels</h1>
+  
+  <app-smestaj-lista></app-smestaj-lista>
+
+  <div class="ui raised segment">
+    <h3 class="ui dividing header">Dodavanje Nove Sobe</h3>
+    <form class="ui form">
+      <div class="field">
+        <label>Naziv</label>
+        <input type="text" name="naziv" [(ngModel)]="smestaj.naziv" placeholder="Unesite naziv sobe" required>
+      </div>
+      <div class="field">
+        <label>Broj Kreveta</label>
+        <input type="number" name="brojKreveta" [(ngModel)]="smestaj.brojKreveta" placeholder="Unesite broj kreveta">
+      </div>
+      <div class="field">
+        <label>Cena Po Noći</label>
+        <input type="number" name="cenaPoNoci" [(ngModel)]="smestaj.cenaPoNoci" placeholder="Unesite cenu po noći">
+      </div>
+      <button class="ui blue button" (click)="dodajSobu()">Dodaj Sobu</button>
+    </form>
+  </div>
+  
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<div class="ui raised segment">
+  <h3 class="ui dividing header">Dodavanje Nove Sobe</h3>
+  <form class="ui form">
+    <div class="field">
+      <label>Naziv</label>
+      <input type="text" name="naziv" [(ngModel)]="smestaj.naziv" placeholder="Unesite naziv sobe" required>
+    </div>
+    <div class="field">
+      <label>Broj Kreveta</label>
+      <input type="number" name="brojKreveta" [(ngModel)]="smestaj.brojKreveta" placeholder="Unesite broj kreveta">
+    </div>
+    <div class="field">
+      <label>Cena Po Noći</label>
+      <input type="number" name="cenaPoNoci" [(ngModel)]="smestaj.cenaPoNoci" placeholder="Unesite cenu po noći">
+    </div>
+    <button class="ui blue button" (click)="dodajSobu()">Dodaj Sobu</button>
+  </form>
+</div>
